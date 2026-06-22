@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
-const API = import.meta.env.VITE_API_URL || "/api";
+const API = import.meta.env.VITE_API_URL || "https://stock-monitor-backend-dw2y.onrender.com/api";
 const RECENT_KEY = "stockmonitor-recent";
 const PERIODS = [
   ["1M", 22], ["6M", 126], ["1Yr", 252], ["3Yr", 252], ["5Yr", 252], ["10Yr", 252], ["Max", 9999]
