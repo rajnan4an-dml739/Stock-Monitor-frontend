@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --color-ink: #222;
+  --color-muted: #6b7280;
+  --color-brand: #6f3ff5;
+  --color-brand-dark: #5b32cc;
+  --color-brand-light: #f3efff;
+  --color-cream: #f8f9fb;
+  --color-line: #e5e7eb;
+  --color-loss: #dc2626;
+  --color-gain: #16a34a;
+  --color-panel: #ffffff;
+}
+
+@layer base {
+  html { @apply min-h-full min-w-80; }
+  body { @apply m-0 min-h-screen min-w-80 bg-cream font-sans text-ink antialiased; }
+  #root { @apply min-h-screen; }
+  button { @apply cursor-pointer; -webkit-tap-highlight-color: transparent; }
+  button:focus-visible, input:focus-visible { @apply outline-2 outline-offset-2 outline-brand/30; }
+}
