@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from "react";
 import axios from "axios";
 
 const DEFAULT_API = import.meta.env.PROD
-  ? "https://stock-monitor-backend-ev5k.onrender.com/api"
+  ? "https://stock-monitor-backend-one.vercel.app"
   : "/api";
 const API = import.meta.env.VITE_API_URL || DEFAULT_API;
 const RECENT_KEY = "stockmonitor-recent";
